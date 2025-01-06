@@ -98,7 +98,7 @@ app.patch("/user/:id", (req, res)=>{
           if(err) throw err;
           res.redirect("/users");
         });
-      }
+      };
     });
   }catch(err){
     console.log(err);
@@ -167,7 +167,7 @@ app.delete("/users/:id/", (req, res)=>{
             else{
               console.log(result);
               //res.render("deletedPage.ejs");
-              res.redirect("/user");
+              res.redirect("/users");
             }
           });
         }catch(err){
