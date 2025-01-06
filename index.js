@@ -166,7 +166,8 @@ app.delete("/users/:id/", (req, res)=>{
             if(err) throw err;
             else{
               console.log(result);
-              res.render("deletedPage.ejs");
+              //res.render("deletedPage.ejs");
+              res.redirect("/user");
             }
           });
         }catch(err){
